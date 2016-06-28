@@ -16,6 +16,12 @@
   <remote  name="bitbucket"
            fetch="https://bitbucket.org" />
 
+  <remote  name="somnayna"
+           fetch="https://github.com/somnayna" />
+
+  <remote  name="tandob"
+           fetch="https://github.com/tandob" />
+
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/"
            review="review.cyanogenmod.org"
@@ -563,4 +569,6 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
+  <project path="device/Micromax/E313" name="android_device_Micromax_E313" remote="somnayna" revision="cm-13.0" />
+  <project path="vendor/Micromax/E313" name="android_vendor_Micromax_E313" remote="tandob" revision="cm-13.0" />
 </manifest>
