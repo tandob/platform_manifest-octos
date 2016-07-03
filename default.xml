@@ -53,7 +53,7 @@
 
   <project path="manifest" name="platform_manifest-octos" remote="somnayna" revision="oct-mm" />
   <project path="frameworks/base" name="octos_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="somnayna" revision="oct-mm" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony-mtk" groups="pdk" remote="tandob" revision="cm-13.0-mt6592" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony-mtk" groups="pdk" remote="tandob" revision="cm-13.0-mt6592" />
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor" remote="to" revision="oct-mm" />
