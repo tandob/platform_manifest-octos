@@ -51,7 +51,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="manifest" name="platform_manifest-octos" remote="somnayna" revision="oct-mm" />
+  <project path="manifest" name="platform_manifest" remote="to" revision="oct-mm" />
   <project path="frameworks/base" name="octos_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="somnayna" revision="oct-mm" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony-mtk" groups="pdk" remote="tandob" revision="cm-13.0-mt6592" />
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
@@ -61,7 +61,7 @@
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="oct-mm" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/providers/OpenWeatherMapProvider" name="platform_packages_apps_OpenWeatherMapProvider" remote="to" revision="oct-mm" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-fs" remote="CyanogenMod" revision="cm-13.0" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-fs" remote="cm" revision="cm-13.0" />
   <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="oct-mm" />
   <project path="prebuilts/misc" name="platform_prebuilts_misc" groups="pdk" remote="to" revision="oct-mm" />
   <project path="vendor/to" name="platform_vendor_to" remote="somnayna" revision="oct-mm" />
