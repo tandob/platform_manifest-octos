@@ -22,8 +22,8 @@
   <remote  name="tandob"
            fetch="https://github.com/tandob/" />
            
-  <remote  name="s0m-xen0n"
-           fetch="https://github.com/s0m-xen0n/" />
+  <remote  name="s0m-mtk"
+           fetch="https://github.com/s0m-mtk/" />
 
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod/"
@@ -571,6 +571,7 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
-  <project path="device/Micromax/E313" name="android_device_Micromax_E313" remote="somnayna" revision="cm-13.0" />
-  <project path="vendor/Micromax/E313" name="android_vendor_Micromax_E313" remote="somnayna" revision="cm-13.0" />
+  <project path="device/kingzone/k1_turbo" name="s0m-mtk/android_device_kingzone_k1-turbo" revision="cm-13.0" />
+  <project path="vendor/kingzone/k1_turbo" name="s0m-mtk/android_vendor_kingzone_k1-turbo" revision="cm-13.0" />
+  
 </manifest>
