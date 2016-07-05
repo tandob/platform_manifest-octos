@@ -571,7 +571,7 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
-  <project path="device/kingzone/k1_turbo" name="s0m-mtk/android_device_kingzone_k1-turbo" revision="cm-13.0" />
-  <project path="vendor/kingzone/k1_turbo" name="s0m-mtk/android_vendor_kingzone_k1-turbo" revision="cm-13.0" />
+  <project path="device/Micromax/E313" name="somnayna/android_device_Micromax_E313" revision="cm-13.0" />
+  <project path="vendor/Micromax/E313" name="somnayna/android_vendor_Micromax_E313" revision="cm-13.0" />
   
 </manifest>
