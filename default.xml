@@ -287,7 +287,7 @@
   <project path="packages/apps/Screencast" name="CyanogenMod/android_packages_apps_Screencast" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" groups="pdk-fs" />
-  <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
+  <project path="packages/apps/Snap" name="android_packages_apps_Snap-mtk" remote="tandob" />
   <project path="packages/apps/SmartCover" name="tandob/android_packages_apps_SmartCover-mtk" groups="pdk-cw-fs,pdk-fs" revision="cm-13.0-mt6592" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
@@ -522,7 +522,6 @@
   <project path="packages/apps/AudioFX" name="platform/packages/apps/MusicFX" remote="aosp" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="aosp" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="aosp" groups="pdk-fs"/>
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="aosp" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" remote="aosp" groups="pdk-fs"/>
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" remote="aosp" groups="pdk-fs"/>
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" groups="pdk-fs" revision="refs/tags/android-6.0.1_r18" />
