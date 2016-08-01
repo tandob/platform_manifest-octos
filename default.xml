@@ -16,6 +16,11 @@
   <remote  name="bitbucket"
            fetch="https://bitbucket.org" />
 
+  <remote  name="tandob"
+           fetch="git://github.com/tandob/"
+           sync-c="true"
+           sync-j="1" />
+
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/"
            review="review.cyanogenmod.org"
@@ -37,7 +42,7 @@
   <default revision="refs/heads/cm-13.0"
            remote="github"
            sync-c="true"
-           sync-j="4" />
+           sync-j="1" />
 
 <!-- BEGIN OCTOS -->
 
@@ -46,14 +51,14 @@
   </project>
 
   <project path="manifest" name="platform_manifest" remote="to" revision="oct-mm" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="to" revision="oct-mm" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="to" revision="oct-mm" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="tandob" revision="oct-mm" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="tandob" revision="oct-mm" />
   <project path="packages/apps/AboutOctOs" name="platform_packages_apps_AboutOctOs" remote="to" revision="oct-mm" />
   <project path="packages/apps/FileManager" name="platform_packages_apps_FileManager" remote="to" revision="oct-mm" />
   <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KernelAdiutor" remote="to" revision="oct-mm" />
   <project path="packages/apps/LTMLauncher" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="to" revision="oct-mm" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="to" revision="oct-mm" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" remote="tandob" revision="oct-mm" />
   <project path="packages/providers/OpenWeatherMapProvider" name="platform_packages_apps_OpenWeatherMapProvider" remote="to" revision="oct-mm" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-fs" remote="to" revision="oct-mm" />
   <project path="packages/wallpapers/BlueBalls" name="platform_packages_wallpapers_BlueBalls" remote="to" revision="oct-mm" />
@@ -176,7 +181,7 @@
   <project path="external/powertop" name="CyanogenMod/android_external_powertop" />
   <project path="external/protobuf-c" name="CyanogenMod/android_external_protobuf-c" />
   <project path="external/rsync" name="CyanogenMod/android_external_rsync" />
-  <project path="external/sepolicy" name="CyanogenMod/android_external_sepolicy" groups="pdk" />
+  <project path="external/sepolicy" name="android_external_sepolicy-mtk" groups="pdk" remote="tandob" />
   <project path="external/skia" name="CyanogenMod/android_external_skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk" />
   <project path="external/speex" name="CyanogenMod/android_external_speex" groups="pdk" />
@@ -194,11 +199,11 @@
   <project path="external/unzip" name="CyanogenMod/android_external_unzip" />
   <project path="external/vim" name="CyanogenMod/android_external_vim" />
   <project path="external/vogar" name="CyanogenMod/android_external_vogar" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8-mtk" groups="pdk" remote="tandob" />
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
   <project path="external/zip" name="CyanogenMod/android_external_zip" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/av" name="android_frameworks_av-mtk" groups="pdk" remote="tandob" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -206,7 +211,7 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
+  <project path="frameworks/native" name="android_frameworks_native-mtk" groups="pdk" remote="tandob" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -224,7 +229,7 @@
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
+  <project path="frameworks/rs" name="android_frameworks_rs-mtk" groups="pdk" remote="tandob" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" groups="pdk-cw-fs,pdk-fs" />
@@ -263,7 +268,7 @@
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" groups="pdk-fs" />
   <project path="packages/apps/Dialer" name="CyanogenMod/android_packages_apps_Dialer" groups="pdk-fs" />
   <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" groups="pdk-fs" />
-  <project path="packages/apps/FMRadio" name="CyanogenMod/android_packages_apps_FMRadio" groups="pdk-fs" />
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio-mtk" groups="pdk-fs" remote="tandob" />
   <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" groups="pdk-fs" />
   <project path="packages/apps/Gello" name="CyanogenMod/android_packages_apps_Gello" />
   <project path="packages/apps/InCallUI" name="CyanogenMod/android_packages_apps_InCallUI" groups="pdk-fs" />
@@ -271,7 +276,6 @@
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
   <project path="packages/apps/ManagedProvisioning" name="CyanogenMod/android_packages_apps_ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="CyanogenMod/android_packages_apps_Messaging" groups="pdk-fs" />
-  <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="aosp" groups="pdk-fs" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
@@ -280,6 +284,7 @@
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
+  <project path="packages/apps/SmartCover" name="android_packages_apps_SmartCover-mtk" groups="pdk-cw-fs,pdk-fs" remote="tandob" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/Tag" name="CyanogenMod/android_packages_apps_Tag" groups="pdk-fs" />
@@ -303,21 +308,20 @@
   <project path="packages/screensavers/Basic" name="CyanogenMod/android_packages_screensavers_Basic" groups="pdk-fs" />
   <project path="packages/screensavers/PhotoTable" name="CyanogenMod/android_packages_screensavers_PhotoTable" groups="pdk-fs" />
   <project path="packages/screensavers/WebView" name="CyanogenMod/android_packages_screensavers_WebView" groups="pdk-fs" />
-  <project path="packages/services/CMAudioService" name="CyanogenMod/android_packages_services_CMAudioService" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/LiveLockScreenService" name="CyanogenMod/android_packages_services_LiveLockScreenService" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="CyanogenMod/android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Telecomm" name="CyanogenMod/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/cmsdk" name="CyanogenMod/android_prebuilts_cmsdk" revision="master" />
-  <project path="system/bt" name="CyanogenMod/android_system_bt" groups="pdk" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
+  <project path="system/bt" name="android_system_bt-mtk" groups="pdk" remote="tandob" />
+  <project path="system/core" name="android_system_core-mtk" groups="pdk" remote="tandob" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
-  <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
-  <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
+  <project path="system/media" name="android_system_media-mtk" groups="pdk" remote="tandob" />
+  <project path="system/netd" name="android_system_netd-mtk" groups="pdk" remote="tandob" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
+  <project path="system/vold" name="android_system_vold-mtk" groups="pdk" />
 
 <!-- CMSDK SAMPLES -->
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" />
@@ -564,4 +568,5 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
+ <project path="device/kingzone/k1_turbo" name="tandob/android_device_kingzone_k1_turbo" revision="cm-13.0" />
 </manifest>
