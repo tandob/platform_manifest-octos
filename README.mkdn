@@ -131,7 +131,13 @@ Initialize the Repositories
 ---------------------------
 
     cd ~/octos
-    repo init -u https://github.com/Team-OctOS/platform_manifest.git -b oct-mm && repo sync
+    repo init -u https://github.com/tandob/platform_manifest-octos.git -b oct-mm
+    
+    repo sync -j1 -f --force-sync --no-clone-bundle
+
+    source build/envsetup.sh
+
+     brunch cm_k1_turbo-userdebug
 
 This will initialize the new repository and begin the initial sync.  This will take a while!
 
