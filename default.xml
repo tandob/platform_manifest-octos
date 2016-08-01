@@ -321,7 +321,7 @@
   <project path="system/netd" name="android_system_netd-mtk" groups="pdk" remote="tandob" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
-  <project path="system/vold" name="android_system_vold-mtk" groups="pdk" />
+  <project path="system/vold" name="android_system_vold-mtk" groups="pdk" remote="tandob" />
 
 <!-- CMSDK SAMPLES -->
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" />
